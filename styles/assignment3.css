@@ -4,19 +4,15 @@
 body {
     background-color: black;
     /* Turns background color black */
-
 }
 
 header {
-    display: flex;
-    /* Turns header into a flex container for horizontal layout */
-    justify-content: space-evenly;
-    /* Creates even space between child elements */
+    display: flex; /* Turns header into a flex container for horizontal layout */
+    justify-content: space-evenly; /* Creates even space between child elements */
     width: 80%;
-    align-items: center;
-    /* Vertically centers items within the header */
-    margin: 0 auto;
-    /* Horizontally centers the header on the page */
+    align-items: center; /* Vertically centers items within the header */
+    margin: 0 auto; /* Horizontally centers the header on the page */
+    flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
 header h2 {
@@ -24,16 +20,13 @@ header h2 {
 }
 
 header h2 a {
-    text-decoration: none;
-    /* Remove underline from the link */
-    color: #E54E07;
-    /* Set link color to orange */
+    text-decoration: none; /* Remove underline from the link */
+    color: #E54E07; /* Set link color to orange */
     font: 40px "Lexend Deca";
 }
 
 nav {
-    display: flex;
-    /* Makes nav flex container arrange items horizontally */
+    display: flex; /* Makes nav flex container arrange items horizontally */
 }
 
 nav ul a {
@@ -43,12 +36,10 @@ nav ul a {
 }
 
 nav ul {
-    list-style: none;
-    /* Remove bullet points */
-    display: flex;
-    /* Arrange list items into a row */
-    gap: 24px;
-    /* Adds 24px space between each item */
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Arrange list items into a row */
+    gap: 24px; /* Adds 24px space between each item */
+    padding-left: 0;
 }
 
 .links {
@@ -58,39 +49,29 @@ nav ul {
 }
 
 .links img {
-    width: 45px;
-    /* Set image width */
-    height: 45px;
-    /* Set image height */
+    width: 45px; /* Set image width */
+    height: 45px; /* Set image height */
 }
 
 .github,
 .linkedin {
     filter: brightness(0) saturate(100%) invert(32%) sepia(71%) saturate(3217%) hue-rotate(7deg) brightness(97%) contrast(95%);
+    /* Applies custom color filter to svg icon images */
 }
 
-/* Applies custom color filter to svg icon images */
-
 .hero {
-    background-image: url("../images/Hero image.png");
-    /* Set hero background image */
-    background-repeat: no-repeat;
-    /* Stops image from repeating */
-    background-size: contain;
-    /* Scale image to fit container */
-    background-position: center;
-    /* Center image in the container */
+    background-image: url("../images/Hero image.png"); /* Set hero background image */
+    background-repeat: no-repeat; /* Stops image from repeating */
+    background-size: contain; /* Scale image to fit container */
+    background-position: center; /* Center image in the container */
     height: 900px;
     width: 100%;
     color: white;
-    display: flex;
-    /* Use flexbox for layout */
-    flex-direction: column;
-    /* Stack children vertically */
-    align-items: center;
-    /* Center children horizontally */
-    justify-content: center;
-    /* Center children vertically */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    margin: 0; /* Removed previous margin-right */
 }
 
 .hero h1 {
@@ -98,14 +79,8 @@ nav ul {
     margin: 0 auto;
 }
 
-.hero {
-    margin-right: 220px;
-    /* Add right margin to .hero */
-}
-
 .flow {
-    margin-left: 700px;
-    /* Add left margin to .flow */
+    margin: 0; /* Removed previous margin-left */
 }
 
 .tittle,
@@ -118,14 +93,18 @@ nav ul {
     font-size: 30px;
 }
 
-
 #about {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    /* Adds space between items */
+    gap: 100px; /* Adds space between items */
     height: 722px;
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
 }
 
 .about-text {
@@ -134,6 +113,7 @@ nav ul {
     flex-direction: column;
     gap: 24px;
     font-family: "Lexend Deca";
+    min-width: 280px; /* prevent shrinking too small */
 }
 
 .tittle {
@@ -146,8 +126,7 @@ nav ul {
 }
 
 .about-text2 {
-    padding-top: 0;
-    /* Remove top padding */
+    padding-top: 0; /* Remove top padding */
 }
 
 button {
@@ -155,10 +134,8 @@ button {
     color: white;
     font-size: 30px;
     font-family: "Lexend Deca";
-    padding: 10px 50px 10px 50px;
-    /* Adds vertical and horizontal padding */
-    border: 0;
-    /* Remove border */
+    padding: 10px 50px; /* Adds vertical and horizontal padding */
+    border: 0; /* Remove border */
 }
 
 #languages {
@@ -167,6 +144,8 @@ button {
     align-items: center;
     gap: 300px;
     margin: 100px;
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 #languages img {
@@ -178,35 +157,30 @@ button {
 
 #projects {
     display: flex;
-    justify-content: center;
-    /* Center items vertically */
-    flex-direction: column;
-    /* Stack items vertically */
-    align-items: center;
-    /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 .project-section {
     display: flex;
-    align-items: center;
-    /* Vertically center items */
-    justify-content: center;
-    /* Horizontally center items */
-    gap: 50px;
-    /* Adds 50px between items */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    gap: 50px; /* Adds 50px between items */
+    flex-wrap: wrap;
 }
 
 .project-section div {
     width: 375px;
     height: 486px;
-    background: linear-gradient(to top, #737373, #0D0D0D);
-    /* Creates a gradient background */
+    background: linear-gradient(to top, #737373, #0D0D0D); /* Creates a gradient background */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 25px;
     font-family: "Lexend Deca";
     color: white;
+    text-align: center;
 }
 
 .project-tittle {
@@ -221,10 +195,8 @@ button {
 }
 
 form {
-    display: flex;
-    /* Applies flexbox layout */
-    flex-direction: column;
-    /* Stack form elements vertically */
+    display: flex; /* Applies flexbox layout */
+    flex-direction: column; /* Stack form elements vertically */
     width: 400px;
     gap: 16px;
 }
@@ -240,10 +212,8 @@ input {
     color: white;
     background-color: black;
     font: 24px "Lexend Deca";
-    border: 1px solid white;
-    /* Adds a white border */
-    padding: 4px 10px 4px 10px;
-    /* Adds padding inside input */
+    border: 1px solid white; /* Adds a white border */
+    padding: 4px 10px; /* Adds padding inside input */
     height: 50px;
 }
 
@@ -255,122 +225,155 @@ input {
 
 footer {
     display: flex;
-    justify-content: center;
-    /* Center content horizontally */
-    align-items: center;
-    /* Center content vertically */
-    margin-bottom: 40px;
-    /* Adds 40px of space below the footer */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-bottom: 40px; /* Adds 40px of space below the footer */
 }
 
-/* Tablet styles */
-@media screen and (max-width:960px) {
-    #header {
-        flex: 1 0 100%;
-        /* Makes header take full width in the flex container */
-    }
+/* Tablet Styles */
+@media screen and (max-width: 960px) {
 
-    .about {
-        flex: 1 0 100%;
-    }
-
-    .hero h1 {
-        flex: 1 0 100%;
+    header {
+        width: 90%;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     #about {
-        flex: 1 0 100%;
+        height: auto;
+        gap: 40px;
+    }
+
+    .about-text {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
     }
 
     #languages {
-        flex: 1 0 100%;
         gap: 160px;
     }
 
     .project-section {
-        flex-direction: row;
-        /* Stack boxes vertically */
-        align-items: center;
-        /* Center boxes horizontally */
-        gap: 60px;
-        /* Reduce spacing by 60 px */
+        gap: 40px;
     }
 
     .project-section div {
-        width: 250px;
-        /* Make project boxes fit smaller screens */
+        width: 300px;
         height: 380px;
         max-width: 800px;
     }
 
+    form {
+        width: 100%;
+        max-width: 350px;
+    }
+
     #contact {
-        flex: 1 0 100%;
+        height: auto;
+        flex-direction: column;
         gap: 30px;
     }
 }
 
 /* Phone Styles */
 @media screen and (max-width: 568px) {
-    #header {
-        flex: 1 0 80%;
-    }
-    #logo-and-site-name{
-        font-size: 12px;
-    }
-    .links {
-        flex-direction: row;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .links img {
-        width: 36px;
-        height: 36px;
-    }
-
-    .hero h1{
-        flex: 1 0 100%;
+    header {
         display: flex;
-        font-size: 80px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        width: 95%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    #logo-and-site-name {
+        flex: 1 1 auto;
+        order: 1;
+        font-size: 24px;
+    }
+
+    .links {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        order: 2;
+    }
+
+    #main-navigation {
+        flex: 1 1 100%;
+        order: 3;
+        margin-top: 10px;
+    }
+
+    #main-navigation ul {
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: clamp(60px, 10vw, 120px);
+        margin: 0;
+        text-align: center;
+    }
+
+    .flow h1 {
+        font-size: clamp(60px, 10vw, 120px);
+        margin: 0;
+        text-align: center;
     }
 
     #about {
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        height: auto;
+        gap: 20px;
         text-align: center;
     }
 
     #about img {
-        width: auto;
+        max-width: 200px;
         height: auto;
+        border-radius: 10px;
     }
 
     .about-text {
-        padding: 10px;
+        width: 100%;
+        max-width: 350px;
+        padding: 0 10px;
     }
 
     .paragraph {
         font-size: 16px;
         padding: 0 10px;
-        display: flex;
+        display: block;
     }
 
     .download {
         padding: 10px 20px;
         font-size: 16px;
+        align-self: center;
     }
 
     #languages {
-        
-        justify-content: center;
         gap: 80px;
         padding: 20px;
+        justify-content: center;
     }
 
     #languages img {
         width: 60px;
         height: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .project-section {
@@ -381,16 +384,17 @@ footer {
 
     .project-section div {
         width: 90%;
-        max-width: 300px;
-        padding: 20px;
+        max-width: 350px;
         height: auto;
+        padding: 20px;
         font-size: 18px;
         text-align: center;
     }
 
-    .project-tittle h2 {
+    .project-tittle {
         font-size: 24px;
         text-align: center;
+        margin-bottom: 16px;
     }
 
     #contact {
@@ -398,6 +402,7 @@ footer {
         gap: 20px;
         padding: 20px;
         text-align: center;
+        height: auto;
     }
 
     #contact h2 {
@@ -429,8 +434,13 @@ footer {
     }
 
     #footer-navigation ul {
-    gap: 10px;
-    padding: 0;
-    font-size: 8px;
-  }
+        gap: 10px;
+        padding: 0;
+        font-size: 12px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
 }
+
