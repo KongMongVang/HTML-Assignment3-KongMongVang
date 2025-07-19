@@ -1,0 +1,436 @@
+/* Sets font to Lexend Deca */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+    background-color: black;
+    /* Turns background color black */
+
+}
+
+header {
+    display: flex;
+    /* Turns header into a flex container for horizontal layout */
+    justify-content: space-evenly;
+    /* Creates even space between child elements */
+    width: 80%;
+    align-items: center;
+    /* Vertically centers items within the header */
+    margin: 0 auto;
+    /* Horizontally centers the header on the page */
+}
+
+header h2 {
+    color: #E54E07;
+}
+
+header h2 a {
+    text-decoration: none;
+    /* Remove underline from the link */
+    color: #E54E07;
+    /* Set link color to orange */
+    font: 40px "Lexend Deca";
+}
+
+nav {
+    display: flex;
+    /* Makes nav flex container arrange items horizontally */
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font: 20px "Lexend Deca";
+}
+
+nav ul {
+    list-style: none;
+    /* Remove bullet points */
+    display: flex;
+    /* Arrange list items into a row */
+    gap: 24px;
+    /* Adds 24px space between each item */
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.links img {
+    width: 45px;
+    /* Set image width */
+    height: 45px;
+    /* Set image height */
+}
+
+.github,
+.linkedin {
+    filter: brightness(0) saturate(100%) invert(32%) sepia(71%) saturate(3217%) hue-rotate(7deg) brightness(97%) contrast(95%);
+}
+
+/* Applies custom color filter to svg icon images */
+
+.hero {
+    background-image: url("../images/Hero image.png");
+    /* Set hero background image */
+    background-repeat: no-repeat;
+    /* Stops image from repeating */
+    background-size: contain;
+    /* Scale image to fit container */
+    background-position: center;
+    /* Center image in the container */
+    height: 900px;
+    width: 100%;
+    color: white;
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center children horizontally */
+    justify-content: center;
+    /* Center children vertically */
+}
+
+.hero h1 {
+    font: 200px "Lexend Deca";
+    margin: 0 auto;
+}
+
+.hero {
+    margin-right: 220px;
+    /* Add right margin to .hero */
+}
+
+.flow {
+    margin-left: 700px;
+    /* Add left margin to .flow */
+}
+
+.tittle,
+.paragraph {
+    color: white;
+}
+
+.tittle2 {
+    color: #E54E07;
+    font-size: 30px;
+}
+
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    /* Adds space between items */
+    height: 722px;
+}
+
+.about-text {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: "Lexend Deca";
+}
+
+.tittle {
+    font-size: 48px;
+    height: 150px;
+}
+
+.paragraph {
+    font-size: 24px;
+}
+
+.about-text2 {
+    padding-top: 0;
+    /* Remove top padding */
+}
+
+button {
+    background-color: #E54E07;
+    color: white;
+    font-size: 30px;
+    font-family: "Lexend Deca";
+    padding: 10px 50px 10px 50px;
+    /* Adds vertical and horizontal padding */
+    border: 0;
+    /* Remove border */
+}
+
+#languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    margin: 100px;
+}
+
+#languages img {
+    width: 100px;
+    height: 100px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    /* Center items vertically */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+}
+
+.project-section {
+    display: flex;
+    align-items: center;
+    /* Vertically center items */
+    justify-content: center;
+    /* Horizontally center items */
+    gap: 50px;
+    /* Adds 50px between items */
+}
+
+.project-section div {
+    width: 375px;
+    height: 486px;
+    background: linear-gradient(to top, #737373, #0D0D0D);
+    /* Creates a gradient background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Lexend Deca";
+    color: white;
+}
+
+.project-tittle {
+    font: 48px "Lexend Deca";
+    color: white;
+}
+
+.contact-tittle {
+    font: 28px "Lexend Deca";
+    color: white;
+    width: 580px;
+}
+
+form {
+    display: flex;
+    /* Applies flexbox layout */
+    flex-direction: column;
+    /* Stack form elements vertically */
+    width: 400px;
+    gap: 16px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+input {
+    color: white;
+    background-color: black;
+    font: 24px "Lexend Deca";
+    border: 1px solid white;
+    /* Adds a white border */
+    padding: 4px 10px 4px 10px;
+    /* Adds padding inside input */
+    height: 50px;
+}
+
+.contact-btn {
+    width: 100%;
+    font-size: 30px;
+    font-family: "Lexend Deca";
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    margin-bottom: 40px;
+    /* Adds 40px of space below the footer */
+}
+
+/* Tablet styles */
+@media screen and (max-width:960px) {
+    #header {
+        flex: 1 0 100%;
+        /* Makes header take full width in the flex container */
+    }
+
+    .about {
+        flex: 1 0 100%;
+    }
+
+    .hero h1 {
+        flex: 1 0 100%;
+    }
+
+    #about {
+        flex: 1 0 100%;
+    }
+
+    #languages {
+        flex: 1 0 100%;
+        gap: 160px;
+    }
+
+    .project-section {
+        flex-direction: row;
+        /* Stack boxes vertically */
+        align-items: center;
+        /* Center boxes horizontally */
+        gap: 60px;
+        /* Reduce spacing by 60 px */
+    }
+
+    .project-section div {
+        width: 250px;
+        /* Make project boxes fit smaller screens */
+        height: 380px;
+        max-width: 800px;
+    }
+
+    #contact {
+        flex: 1 0 100%;
+        gap: 30px;
+    }
+}
+
+/* Phone Styles */
+@media screen and (max-width: 568px) {
+    #header {
+        flex: 1 0 80%;
+    }
+    #logo-and-site-name{
+        font-size: 12px;
+    }
+    .links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .links img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .hero h1{
+        flex: 1 0 100%;
+        display: flex;
+        font-size: 80px;
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #about img {
+        width: auto;
+        height: auto;
+    }
+
+    .about-text {
+        padding: 10px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        padding: 0 10px;
+        display: flex;
+    }
+
+    .download {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    #languages {
+        
+        justify-content: center;
+        gap: 80px;
+        padding: 20px;
+    }
+
+    #languages img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .project-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .project-section div {
+        width: 90%;
+        max-width: 300px;
+        padding: 20px;
+        height: auto;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .project-tittle h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #contact h2 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        gap: 12px;
+    }
+
+    input {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .contact-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #footer-navigation ul {
+    gap: 10px;
+    padding: 0;
+    font-size: 8px;
+  }
+}
