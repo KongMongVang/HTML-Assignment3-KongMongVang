@@ -3,15 +3,19 @@
 
 body {
     background-color: black;
-    /* Turns background color black */
+ /* Turns background color black */
 }
 
 header {
-    display: flex; /* Turns header into a flex container for horizontal layout */
-    justify-content: space-evenly; /* Creates even space between child elements */
+    display: flex;
+    /* Turns header into a flex container for horizontal layout */
+    justify-content: space-evenly;
+    /* Creates even space between child elements */
     width: 80%;
-    align-items: center; /* Vertically centers items within the header */
-    margin: 0 auto; /* Horizontally centers the header on the page */
+    align-items: center;
+    /* Vertically centers items within the header */
+    margin: 0 auto;
+    /* Horizontally centers the header on the page */
     flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
@@ -20,13 +24,16 @@ header h2 {
 }
 
 header h2 a {
-    text-decoration: none; /* Remove underline from the link */
-    color: #E54E07; /* Set link color to orange */
+    text-decoration: none;
+    /* Remove underline from the link */
+    color: #E54E07;
+    /* Set link color to orange */
     font: 40px "Lexend Deca";
 }
 
 nav {
-    display: flex; /* Makes nav flex container arrange items horizontally */
+    display: flex;
+    /* Makes nav flex container arrange items horizontally */
 }
 
 nav ul a {
@@ -36,9 +43,12 @@ nav ul a {
 }
 
 nav ul {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Arrange list items into a row */
-    gap: 24px; /* Adds 24px space between each item */
+    list-style: none;
+    /* Remove bullet points */
+    display: flex;
+    /* Arrange list items into a row */
+    gap: 24px;
+    /* Adds 24px space between each item */
     padding-left: 0;
 }
 
@@ -49,8 +59,10 @@ nav ul {
 }
 
 .links img {
-    width: 45px; /* Set image width */
-    height: 45px; /* Set image height */
+    width: 45px;
+    /* Set image width */
+    height: 45px;
+    /* Set image height */
 }
 
 .github,
@@ -60,17 +72,25 @@ nav ul {
 }
 
 .hero {
-    background-image: url("../images/Hero image.png"); /* Set hero background image */
-    background-repeat: no-repeat; /* Stops image from repeating */
-    background-size: contain; /* Scale image to fit container */
-    background-position: center; /* Center image in the container */
+    background-image: url("../images/Hero image.png");
+    /* Set hero background image */
+    background-repeat: no-repeat;
+    /* Stops image from repeating */
+    background-size: contain;
+    /* Scale image to fit container */
+    background-position: center;
+    /* Center image in the container */
     height: 900px;
     width: 100%;
     color: white;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally */
-    justify-content: center; /* Center children vertically */
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center children horizontally */
+    justify-content: center;
+    /* Center children vertically */
     margin: 0; /* Removed previous margin-right */
 }
 
@@ -80,7 +100,8 @@ nav ul {
 }
 
 .flow {
-    margin: 0; /* Removed previous margin-left */
+    margin: 0; 
+    /* Removed previous margin-left */
 }
 
 .tittle,
@@ -97,9 +118,11 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px; /* Adds space between items */
+    gap: 100px; 
+    /* Adds space between items */
     height: 722px;
-    flex-wrap: wrap; /* allow wrapping on smaller screens */
+    flex-wrap: wrap; 
+    /* Allows wrapping on smaller screens */
 }
 
 #about img {
@@ -113,7 +136,8 @@ nav ul {
     flex-direction: column;
     gap: 24px;
     font-family: "Lexend Deca";
-    min-width: 280px; /* prevent shrinking too small */
+    min-width: 280px; 
+    /* Prevent shrinking too small */
 }
 
 .tittle {
@@ -134,8 +158,10 @@ button {
     color: white;
     font-size: 30px;
     font-family: "Lexend Deca";
-    padding: 10px 50px; /* Adds vertical and horizontal padding */
-    border: 0; /* Remove border */
+    padding: 10px 50px;
+    /* Adds vertical and horizontal padding */
+    border: 0;
+    /* Remove border */
 }
 
 #languages {
@@ -157,23 +183,30 @@ button {
 
 #projects {
     display: flex;
-    justify-content: center; /* Center items vertically */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
 }
 
 .project-section {
     display: flex;
-    align-items: center; /* Vertically center items */
-    justify-content: center; /* Horizontally center items */
-    gap: 50px; /* Adds 50px between items */
+    align-items: center;
+    /* Vertically center items */
+    justify-content: center;
+    /* Horizontally center items */
+    gap: 50px;
+    /* Adds 50px between items */
     flex-wrap: wrap;
 }
 
 .project-section div {
     width: 375px;
     height: 486px;
-    background: linear-gradient(to top, #737373, #0D0D0D); /* Creates a gradient background */
+    background: linear-gradient(to top, #737373, #0D0D0D);
+    /* Creates a gradient background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,8 +228,10 @@ button {
 }
 
 form {
-    display: flex; /* Applies flexbox layout */
-    flex-direction: column; /* Stack form elements vertically */
+    display: flex;
+    /* Applies flexbox layout */
+    flex-direction: column;
+    /* Stack form elements vertically */
     width: 400px;
     gap: 16px;
 }
@@ -212,8 +247,10 @@ input {
     color: white;
     background-color: black;
     font: 24px "Lexend Deca";
-    border: 1px solid white; /* Adds a white border */
-    padding: 4px 10px; /* Adds padding inside input */
+    border: 1px solid white;
+    /* Adds a white border */
+    padding: 4px 10px;
+    /* Adds padding inside input */
     height: 50px;
 }
 
@@ -225,9 +262,12 @@ input {
 
 footer {
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    margin-bottom: 40px; /* Adds 40px of space below the footer */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    margin-bottom: 40px;
+    /* Adds 40px of space below the footer */
 }
 
 /* Tablet Styles */
@@ -276,8 +316,9 @@ footer {
     }
 }
 
-/* Phone Styles */
+/* Mobile Styles */
 @media screen and (max-width: 568px) {
+
     header {
         display: flex;
         flex-wrap: wrap;
